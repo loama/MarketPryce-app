@@ -1,0 +1,6 @@
+{
+  "appId": "com.marketpryce.new",
+  "appName": "MarketPryce",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
