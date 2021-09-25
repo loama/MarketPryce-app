@@ -1,18 +1,50 @@
 <template>
-  <div id="app" class="bg-blue-500">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app">
+    <LoadingPage />
+    <Onboarding />
+
     <router-view/>
   </div>
 </template>
 
 <script>
 import 'tailwindcss/tailwind.css'
+import { StatusBar, Style } from '@capacitor/status-bar'
+import LoadingPage from '@/views/LoadingPage'
+import Onboarding from '@/views/Onboarding'
+
 export default {
+  components: {
+    LoadingPage,
+    Onboarding
+  },
+  methods: {
+    async setStatusBarStyleDark () {
+      const result = await StatusBar.setStyle({ style: Style.Dark })
+
+      return result
+    }
+  },
+  mounted () {
+    this.setStatusBarStyleDark()
+
+    this.$router.push({
+      query: {
+        onboarding: 'open'
+      }
+    })
+
+    const self = this
+    setTimeout(() => {
+      self.$store.commit('loaded')
+    }, 2000)
+  }
 }
 </script>
 
 <style lang="sass">
+@import "@/styles/main"
+
+html, body
+  @apply bg-black
 </style>
