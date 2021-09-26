@@ -17,6 +17,11 @@ module.exports = {
         'sky-light': '#E3E5E6',
         sky: '#CDCFD0',
         'sky-dark': '#B4B6B8'
+      },
+      spacing: {
+        21: '5.25rem',
+        22: '5.5rem',
+        23: '5.75rem'
       }
     }
   },

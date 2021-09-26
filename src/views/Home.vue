@@ -1,6 +1,12 @@
 <template>
-  <div class="px-8 py-6" id="home">
-    <div class="gap-6 grid grid-cols-2 mx-auto">
+  <div class="" id="home">
+    <div class="bg-black font-teko-regular fixed h-14 leading-16 left-0 text-center text-2xl uppercase w-screen"
+      id="topbar">
+      <img class="align-top inline mt-5 w-6" src="@/assets/logo.svg" />
+      MarketPryce
+    </div>
+
+    <div class="gap-6 grid grid-cols-2 mx-auto pb-6 pt-20 px-8">
       <div class="w-full" v-bind:key="athlete.id"
         v-for="athlete in athletes"
         v-on:click="openModal('athlete', athlete.id)">

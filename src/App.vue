@@ -5,12 +5,6 @@
     <LoadingPage />
     <Onboarding />
 
-    <div class="font-teko-regular h-14 leading-16 text-center text-2xl uppercase"
-      id="topbar">
-      <img class="align-top inline mt-5 w-6" src="@/assets/logo.svg" />
-      MarketPryce
-    </div>
-
     <div id="content">
       <router-view/>
     </div>
@@ -71,7 +65,7 @@ html, body
   padding-top: env(safe-area-inset-top)
 
 #content
-  height: calc(100vh - env(safe-area-inset-top) - 56px - 56px - env(safe-area-inset-bottom))
+  height: calc(100vh - env(safe-area-inset-top) - 56px - env(safe-area-inset-bottom))
   overflow-y: scroll
 
 #topbar
