@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black fixed duration-300 ease-in-out h-screen left-0 text-white top-0 transition w-screen z-90"
+  <div class="bg-black fixed duration-300 ease-in-out h-screen left-0 top-0 transition w-screen z-90"
     id="onboarding"
     v-bind:class="{
       'opacity-100': open,

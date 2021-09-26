@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <div class="text-white"
+    id="app">
+    <Auth />
     <LoadingPage />
     <Onboarding />
 
@@ -10,11 +12,13 @@
 <script>
 import 'tailwindcss/tailwind.css'
 import { StatusBar, Style } from '@capacitor/status-bar'
+import Auth from '@/views/Auth'
 import LoadingPage from '@/views/LoadingPage'
 import Onboarding from '@/views/Onboarding'
 
 export default {
   components: {
+    Auth,
     LoadingPage,
     Onboarding
   },

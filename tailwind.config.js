@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      borderWidth: {
+        DEFAULT: '0.5px'
+      },
       colors: {
         'ink-lightest': '#7A7E80',
         'ink-lighter': '#464A4D',
