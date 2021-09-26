@@ -3,6 +3,11 @@
 	"appName": "MarketPryce",
 	"webDir": "dist",
 	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {
+			"backgroundColor": "#000"
+		}
+	},
 	"server": {
 		"url": "http://192.168.68.107:8100"
 	}

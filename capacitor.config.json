@@ -2,5 +2,10 @@
   "appId": "com.marketpryce.new",
   "appName": "MarketPryce",
   "webDir": "dist",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+      "backgroundColor": "#000"
+    }
+  }
 }
