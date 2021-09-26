@@ -10,7 +10,7 @@
 
     <div class="absolute border-t border-ink-lightest bottom-0 px-6 py-6 w-screen"
       id="auth-card">
-      <div class="h-6 ml-1">Login or create your account</div>
+      <div class="h-6 ml-1 text-sm uppercase">Login or create your account</div>
 
       <div class="bg-white flex font-teko-regular mt-6 h-14 leading-16 pl-6 pr-4 rounded-sm text-ink text-2xl uppercase"
         v-on:click="closeAuth()">

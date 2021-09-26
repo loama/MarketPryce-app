@@ -48,8 +48,18 @@
     </carousel>
 
     <div class="border border-ink-lightest h-12 mt-14 mx-auto rounded-full w-12"
+      v-if="slide !== 3"
       v-on:click="nextPage()">
       <img class="h-4 mt-3.5 mx-auto w-4" src="@/assets/icons/arrow-right.svg" />
+    </div>
+
+    <div class="bg-white flex font-teko-regular h-14 leading-16 mt-12 mx-10 pl-6 pr-4 rounded-sm text-ink text-2xl uppercase"
+      v-else
+      v-on:click="closeOnboarding()">
+      <div class="flex-grow">Start</div>
+      <div class="flex-none">
+        <img class="mt-4" src="@/assets/icons/arrow-right-black.svg" />
+      </div>
     </div>
   </div>
 </template>
