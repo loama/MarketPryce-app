@@ -2,7 +2,8 @@
   <div class="px-8 py-6" id="home">
     <div class="gap-6 grid grid-cols-2 mx-auto">
       <div class="w-full" v-bind:key="athlete.id"
-        v-for="athlete in athletes">
+        v-for="athlete in athletes"
+        v-on:click="openModal('athlete', athlete.id)">
 
         <img class="border-2 border-ink-light h-28 object-center object-cover rounded-md w-full"
           :src="athlete.img"
@@ -38,6 +39,16 @@ export default {
   computed: {
     athletes () {
       return athletes.data.searchInfluencers.items
+    }
+  },
+  methods: {
+    openModal (modal, id) {
+      this.$router.push({
+        query: {
+          id: id,
+          modal: modal
+        }
+      })
     }
   },
   name: 'Home'

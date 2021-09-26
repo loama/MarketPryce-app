@@ -15,6 +15,7 @@
       <router-view/>
     </div>
 
+    <Modals />
     <Navigation />
   </div>
 </template>
@@ -24,6 +25,7 @@ import 'tailwindcss/tailwind.css'
 import { StatusBar, Style } from '@capacitor/status-bar'
 import Auth from '@/views/Auth'
 import LoadingPage from '@/views/LoadingPage'
+import Modals from '@/views/modals/main'
 import Navigation from '@/views/Navigation'
 import Onboarding from '@/views/Onboarding'
 
@@ -31,6 +33,7 @@ export default {
   components: {
     Auth,
     LoadingPage,
+    Modals,
     Navigation,
     Onboarding
   },
