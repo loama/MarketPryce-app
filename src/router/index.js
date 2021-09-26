@@ -11,6 +11,17 @@ const routes = [
     component: Home
   },
   {
+    path: '/campaigns',
+    name: 'Campaigns',
+    component: () =>
+      import(/* webpackChunkName: "campaigns" */ '../views/Campaigns.vue')
+  },
+  {
+    path: '/chat',
+    name: 'Chat',
+    component: () => import(/* webpackChunkName: "chat" */ '../views/Chat.vue')
+  },
+  {
     path: '/profile',
     name: 'Profile',
     component: () =>
